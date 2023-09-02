@@ -3,7 +3,7 @@
     <div class="content">
         <section class="contact">
             <h1>CONTACT ME</h1>
-            <form method="POST" action="" enctype="multipart/form-data">
+            <form method="POST" action="" enctype="multipart/form-data" novalidate class="form">
                 {{ form.hidden_tag() }}
                 <fieldset class="form-group">
                     <div class="form-group">
@@ -32,11 +32,19 @@
                     </div>
                 </fieldset>
                 <div class="form-group">
-                    {{ form.submit(class="btn btn-outline-info") }}
+                    {{ form.submit(class="btn btn-outline-danger") }}
                 </div>
             </form>   
-            <h3>Email: realmyros@gmail.com</h3>
-            <h3>Phone: +1 (438) 497-3894</h3>
+            <div class="contact-icons">
+                <div class="contact">
+                    <i class="fas fa-envelope" style="color: rgb(116, 255, 243)" id="email-icon"></i>
+                    <h4 id="email-text" class="hidden-text">realmyros@gmail.com</h4>
+                </div>
+                <div class="contact">
+                    <i class="fas fa-phone" style="color: rgb(116, 255, 243)" id="phone-icon"></i>
+                    <h4 id="phone-text" class="hidden-text">+1 (438) 497-3894</h4>
+                </div>  
+            </div>          
             <p>Conubia inceptos ornare lobortis dui mus leo fringilla tellus. Libero erat in porttitor tellus in eu rutrum tortor vestibulum. Vestibulum class faucibus platea. Natoque diam cras vivamus volutpat? Tempor varius cum faucibus non amet vitae conubia facilisi condimentum, lorem condimentum. Habitasse est egestas cursus senectus potenti faucibus? Blandit sapien nulla massa varius. Justo iaculis semper ac. Felis suscipit feugiat fames mi amet condimentum sollicitudin consequat per lacinia odio ad. Placerat sapien urna feugiat. A, adipiscing torquent litora. Semper massa lacinia tristique inceptos egestas. Cubilia luctus tempus vulputate sociosqu.</p>
         </section>
     </div>

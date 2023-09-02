@@ -11,3 +11,16 @@ window.onscroll = function() {
         header.classList.remove('navbarDark');
     }
 }
+
+const emailIcon = document.getElementById("email-icon");
+const emailText = document.getElementById("email-text");
+const phoneIcon = document.getElementById("phone-icon");
+const phoneText = document.getElementById("phone-text");
+
+emailIcon.addEventListener("mouseenter", () => {
+    emailText.style.opacity = 1;
+});
+
+phoneIcon.addEventListener("mouseenter", () => {
+    phoneText.style.opacity = 1;
+});

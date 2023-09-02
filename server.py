@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for, redirect, request
+from flask import Flask, render_template, url_for, redirect, request, flash
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, TextAreaField
 from wtforms.validators import DataRequired, Length
@@ -22,7 +22,7 @@ def projects():
 class ContactForm(FlaskForm):
     email = StringField('Email', validators=[DataRequired()], render_kw={"placeholder": "Email"})                  
     content = TextAreaField('Content', validators=[DataRequired()], render_kw={"placeholder": "Content"})
-    submit = SubmitField('Send')
+    submit = SubmitField('SEND')
 
 @app.route("/contact", methods=['GET', 'POST'])
 def contact():    
