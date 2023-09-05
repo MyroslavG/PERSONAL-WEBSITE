@@ -4,6 +4,19 @@ body {
     padding: 0;
 }
 
+.bg {
+    /* The image used */
+    background-image: url("IMG_1460_cropped.jpg");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
 ul {
     list-style-type: disc;
     padding-left: 20px;
@@ -61,8 +74,9 @@ nav.navbarDark {
     padding: 240px;
 }
 
-.landing.body {
+.landing-body {
     text-align: right;
+    height: 100%;
     padding: 240px;
     background-image: url('IMG_1460_cropped.jpg');
     background-repeat: no-repeat;
