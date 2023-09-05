@@ -1,3 +1,5 @@
+Procfile
+requirements.txt
 .DS_Store
 .env
 .flaskenv
