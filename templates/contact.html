@@ -7,6 +7,18 @@
                 {{ form.hidden_tag() }}
                 <fieldset class="form-group">
                     <div class="form-group">
+                        {% if form.username.errors %}
+                            {{ form.username(class="form-control form-control-lg is-invalid") }}
+                            <div class="invalid-feedback">
+                                {% for error in form.username.errors %}
+                                    <span>{{ error }}</span>
+                                {% endfor %}
+                            </div>
+                        {% else %} 
+                            {{ form.username(class="form-control form-control-lg") }}
+                        {% endif %}
+                    </div>
+                    <div class="form-group">
                         {% if form.email.errors %}
                             {{ form.email(class="form-control form-control-lg is-invalid") }}
                             <div class="invalid-feedback">
@@ -45,7 +57,6 @@
                     <h4 id="phone-text" class="hidden-text">+1 (438) 497-3894</h4>
                 </div>  
             </div>          
-            <p>Conubia inceptos ornare lobortis dui mus leo fringilla tellus. Libero erat in porttitor tellus in eu rutrum tortor vestibulum. Vestibulum class faucibus platea. Natoque diam cras vivamus volutpat? Tempor varius cum faucibus non amet vitae conubia facilisi condimentum, lorem condimentum. Habitasse est egestas cursus senectus potenti faucibus? Blandit sapien nulla massa varius. Justo iaculis semper ac. Felis suscipit feugiat fames mi amet condimentum sollicitudin consequat per lacinia odio ad. Placerat sapien urna feugiat. A, adipiscing torquent litora. Semper massa lacinia tristique inceptos egestas. Cubilia luctus tempus vulputate sociosqu.</p>
         </section>
     </div>
 {% endblock content %}   
