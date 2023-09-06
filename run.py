@@ -21,11 +21,11 @@ def home():
 
 @app.route('/about')
 def about():
-    return render_template('about.html')
+    return render_template('about.html', title='ABOUT')
 
 @app.route('/projects')
 def projects():
-    return render_template('projects.html')    
+    return render_template('projects.html', title='PROJECTS')    
 
 class Message(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -51,4 +51,4 @@ def contact():
         db.session.add(message)
         db.session.commit()
         return redirect(url_for('contact'))
-    return render_template('contact.html', title='Contact', form=form, legend='Contact')
+    return render_template('contact.html', title='CONTACT', form=form, legend='Contact')

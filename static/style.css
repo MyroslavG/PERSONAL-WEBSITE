@@ -1,17 +1,13 @@
-/* Reset some default styles */
 body {
     margin: 0;
     padding: 0;
 }
 
 .bg {
-    /* The image used */
     background-image: url("IMG_1460_cropped.jpg");
   
-    /* Full height */
     height: 100%;
-  
-    /* Center and scale the image nicely */
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -32,7 +28,6 @@ h1, h2, h3, h4, p, span, li {
 }
 
 
-/* Navigation Bar */
 nav {
     position: fixed;
     top: 0;
@@ -61,14 +56,12 @@ nav.navbarDark {
     background-color: black;
 }
 
-/* Content */
 .content {
-    margin-top: 0; /* Adjust this value to provide enough space below the navigation bar */
+    margin-top: 0;
     background-color: #000000;
     padding: 25px;
 }
 
-/* Landing Page */
 .landing.content {
     text-align: center;
     padding: 240px;
@@ -84,13 +77,11 @@ nav.navbarDark {
     background-size: 100% 100%;
 }    
 
-/* About Page */
 .about {
     text-align: center;
     padding: 20px;
 }
 
-/* Projects Page */
 .projects {
     text-align: center;
     padding: 20px;
@@ -102,13 +93,11 @@ nav.navbarDark {
     border: 1px solid #ccc;
 }
 
-/* Contact Page */
 .contact {
     text-align: center;
     padding: 20px;
 }
 
-/* Footer */
 .footer {
     background-color: rgb(0, 0, 0);
     color: rgb(0, 0, 0);
@@ -116,7 +105,6 @@ nav.navbarDark {
     padding: 20px;
 }
 
-/* Social Media Icons */
 .social-icons {
     margin-top: 0;
 }
@@ -132,7 +120,6 @@ nav.navbarDark {
     color: #ff0000;
 }
 
-/* services section css */
 .servicesText.card {
     height: 200px;
     cursor: pointer;
@@ -160,8 +147,6 @@ nav.navbarDark {
     border: var(--border);
     font-size: 1.2rem;
   
-    /* An explicit background is required here, as it's actually transparent by default, and we
-         don't want to see the shadow element behind */
     background: var(--background-color);
 }
 
