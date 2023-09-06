@@ -52,4 +52,3 @@ def contact():
         db.session.commit()
         return redirect(url_for('contact'))
     return render_template('contact.html', title='Contact', form=form, legend='Contact')
-

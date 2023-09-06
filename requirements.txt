@@ -1,4 +1,9 @@
 flask
 flask_wtf
 wtforms
+datetime
+flask_sqlalchemy
+python-dotenv
+sqlalchemy
+alembic
 gunicorn
