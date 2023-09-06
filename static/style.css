@@ -3,16 +3,6 @@ body {
     padding: 0;
 }
 
-.bg {
-    background-image: url("IMG_1460_cropped.jpg");
-  
-    height: 100%;
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
 ul {
     list-style-type: disc;
     padding-left: 20px;
@@ -62,20 +52,21 @@ nav.navbarDark {
     padding: 25px;
 }
 
-.landing.content {
+.box {
+    padding-left: 400px;
+    height: 519px;
+    width: 100%;
     text-align: center;
-    padding: 240px;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
 }
 
-.landing-body {
-    text-align: right;
-    height: 100%;
-    padding: 240px;
+body {
     background-image: url('IMG_1460_cropped.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-}    
+}
 
 .about {
     text-align: center;
@@ -99,10 +90,10 @@ nav.navbarDark {
 }
 
 .footer {
-    background-color: rgb(0, 0, 0);
-    color: rgb(0, 0, 0);
+    width: 100%;
+    height: 3.25rem;
     text-align: center;
-    padding: 20px;
+    background-color: #000000;
 }
 
 .social-icons {
